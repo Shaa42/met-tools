@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     # Create CSV file based on loc_dict
     print("Creating CSV file...")
-    with open("loc_ipv4_fandom.csv", "w") as file:
+    with open("assets/csv/loc_ipv4_fandom.csv", "w") as file:
         file.write("ip,latitude,longitude\n")
         for ip, loc in loc_dict.items():
             file.write(f"{ip},{loc}\n")

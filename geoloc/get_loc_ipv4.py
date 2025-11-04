@@ -3,7 +3,11 @@ import subprocess
 from time import sleep
 
 
-def callBashScript(fname: str):
+def callBash(scriptName: str):
+    _ = subprocess.run(["bash", scriptName], text=True, capture_output=True)
+
+
+def getRouters(fname: str):
     print("Calling script...")
     _ = subprocess.run(
         ["bash", "resolve_ip_traceroute.sh", fname], text=True, capture_output=True
@@ -14,10 +18,12 @@ def callBashScript(fname: str):
 
 if __name__ == "__main__":
     resolve = True
-    fname_ext = "example"
+    fname_ext = "out"
     if resolve:
-        callBashScript(fname_ext)
+        getRouters(fname_ext)
     fname = "assets/trcrt-out/fanrt_" + fname_ext + ".txt"
+
+    callBash("create_dir.sh")
 
     ip_list: list[str] = []
     with open(fname, "r") as file:

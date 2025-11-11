@@ -1,1 +1,3 @@
 folium
+matplotlib
+typing-extensions

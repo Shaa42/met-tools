@@ -1,0 +1,10 @@
+{
+    "url": "https://www.fandom.com/",
+    "dns_lookup_time": 0.056448,
+    "tcp_connect_time": 0.071588,
+    "tls_handshake_time": 0.094519,
+    "time_to_first_byte": 0.112530,
+    "total_time": 0.135469,
+    "redirects": 0,
+    "size_downloaded": 85164
+}

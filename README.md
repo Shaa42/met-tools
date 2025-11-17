@@ -6,7 +6,7 @@
 
 ## Installation
 ```bash
-git clone <URL_DU_DEPOT>
+git clone https://github.com/Shaa42/met-tools.git
 cd met-tools
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
